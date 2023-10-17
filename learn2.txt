@@ -1,0 +1,17 @@
+#include <iostream>
+#include <vector>
+#include <string>
+
+using namespace std;
+
+//定义一个字符串数组，把他们连接在一起然后打印
+int main()
+{
+    vector<string> msg {"你好，", "我来", "学习", "C加加，", "谢谢！"};
+
+    for (const string& word : msg)
+    {
+        cout << word << " ";
+    }
+    cout << endl;
+}

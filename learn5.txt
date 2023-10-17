@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+//输入两个数，看他们的除法结果
+int main()
+{    
+    int divisor, dividend, quotient, remainder;
+
+    cout << "请输入一个被除数: ";
+    cin >> dividend;
+
+    cout << "请输入一个除数: ";
+    cin >> divisor;
+
+    quotient = dividend / divisor;
+    remainder = dividend % divisor;
+
+    cout << "结果 = " << quotient << endl;
+    cout << "余数 = " << remainder;
+
+    return 0;
+}

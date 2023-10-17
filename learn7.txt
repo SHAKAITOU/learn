@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+//输一组数字，计算平均数
+int main()
+{
+    int n, i;
+    float num[100], sum=0.0, average;
+
+    cout << "请先指定要计算的数字个数 (1 到 10 之间): ";
+    cin >> n;
+
+    while (n > 100 || n <= 0)
+    {
+        cout << "请指定 (1 到 10 之间)个数." << endl;
+        cout << "请再正确指定要计算的数字个数: ";
+        cin >> n;
+    }
+
+    for(i = 0; i < n; ++i)
+    {
+        cout << ". 请输入第: " << (i+1) << "个数：";
+        cin >> num[i];
+        sum += num[i];
+    }
+
+    average = sum / n;
+    cout << "平均值 = " << average;
+
+    return 0;
+}

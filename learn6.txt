@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+//输入三个数，让计算机找出最大的数
+int main() {
+    
+    double n1, n2, n3;
+
+    cout << "请输入三个数: " << endl;
+    cout << "第一个数: ";
+    cin >> n1;
+    cout << "第二个数: ";
+    cin >> n2;
+    cout << "第三个数: ";
+    cin >> n3;
+
+    // check if n1 is the largest number
+    if(n1 >= n2 && n1 >= n3)
+        cout << "最大的数: " << n1;
+
+    // check if n2 is the largest number
+    else if(n2 >= n1 && n2 >= n3)
+        cout << "最大的数: " << n2;
+    
+    // if neither n1 nor n2 are the largest, n3 is the largest
+    else 
+        cout << "最大的数: " << n3;
+  
+    return 0;
+}

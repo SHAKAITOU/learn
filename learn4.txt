@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+//输入两个数，看他们的加和结果
+int main() {
+   
+  int first_number, second_number, sum;
+    
+  cout << "请输入两个数: " << endl;;
+  cout << "第一个数: ";
+  cin >> first_number;
+  cout << "第二个数: ";
+  cin >> second_number;
+
+  // sum of two numbers in stored in variable sumOfTwoNumbers
+  sum = first_number + second_number;
+
+  // prints sum 
+  cout << first_number << " + " <<  second_number << " = " << sum;     
+
+  return 0;
+}
